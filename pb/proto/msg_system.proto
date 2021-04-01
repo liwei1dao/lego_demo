@@ -1,0 +1,18 @@
+syntax = "proto3";
+option go_package = ".;pb";
+
+//comId = 0
+//------------------------------------------------------------------------------协议------------------------------------------------------------------------------------------------=
+//Msg = 1 心跳请求
+message HeartbeatReq {
+}
+
+//Msg = 2 心跳回应
+message HeartbeatResp {
+}
+
+//Msg = 100 错误码推送 
+message ErrorCodePush {
+    int32 ErrorCode = 1;
+    string Message = 2;
+}

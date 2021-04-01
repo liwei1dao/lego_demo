@@ -1,8 +1,8 @@
-Id = "live_1"                        #服务的唯一id 不可重复
-Tag = "demo"                        #服务集群标签 相同标签 sys.registry 和 sys.rpc 配置一致 即可互相发现和通信
-Type = "live"                      #服务类型 相同服务类型相同 如 多个login 服务 相同服务多开 服务类型一致
-Category = "BusinessService"        #服务类别 例如 网关服务器 或者 游戏服务器 以及普通业务服务器
-Version = 1                         #服务版本 多服务器相同的服务类型 高版本比低版本拥有更高的访问优先级 使用场景 热更新机制
+Id = "live_1"                           #服务的唯一id 不可重复
+Tag = "demo"                            #服务集群标签 相同标签 sys.registry 和 sys.rpc 配置一致 即可互相发现和通信
+Type = "live"                           #服务类型 相同服务类型相同 如 多个login 服务 相同服务多开 服务类型一致
+Category = "BusinessService"            #服务类别 例如 网关服务器 或者 游戏服务器 以及普通业务服务器
+Version = 1.0                           #服务版本 多服务器相同的服务类型 高版本比低版本拥有更高的访问优先级 使用场景 热更新机制
 
 [Settings]
 
@@ -19,4 +19,17 @@ ConsulAddr = "127.0.0.1:8500"
 [Sys.rpc]
 NatsAddr = "nats://127.0.0.1:4222"
 
-[Modules.SM_ClubModule]
+[Modules.SM_LiveModule]
+RtmpAddr        = ":1935"
+RtmpNoAuth      = true
+CacheAddr       = "redis://127.0.0.1:6379/1"
+FLVArchive      = true
+FLVDir          = "tmp"
+ReadTimeout     = 10
+WriteTimeout    = 10
+GopNum          = 1
+Appname         = "live"
+Live            = true
+Hls             = true
+Flv             = true
+Api             = true

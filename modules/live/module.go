@@ -18,3 +18,8 @@ type Live struct {
 func (this *Live) GetType() core.M_Modules {
 	return lib.SM_LiveModule
 }
+
+func (this *Live) Init(service core.IService, module core.IModule, options core.IModuleOptions) (err error) {
+	err = this.Live.Init(service, module, options)
+	return
+}

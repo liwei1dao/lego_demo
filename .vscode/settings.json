@@ -60,7 +60,7 @@
     "todo-tree.filtering.excludeGlobs": [
         "*.pb.go"
     ],
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "go.docsTool": "gogetdoc",
     "explorer.confirmDelete": false,
     "go.lintFlags": [

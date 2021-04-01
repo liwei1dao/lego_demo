@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	sID = flag.String("sID", "demo1", "获取需要启动的服务id,id不同,读取的配置文件也不同") //启动服务的Id
+	sID = flag.String("sID", "gate_1", "获取需要启动的服务id,id不同,读取的配置文件也不同") //启动服务的Id
 )
 
 func main() {
