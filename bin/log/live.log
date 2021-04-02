@@ -1,9 +1,58 @@
-2021/04/01 12:47:40.955	INFO	cluster/service.go:80	Sys log Init success !
-2021/04/01 12:47:40.975	INFO	cluster/service.go:85	Sys event Init success !
-2021/04/01 12:47:40.975	INFO	cluster/service.go:90	Sys cron Init success !
-2021/04/01 12:47:40.975	INFO	cluster/service.go:95	Sys registry Init success !
-2021/04/01 12:47:40.981	INFO	cluster/service.go:100	Sys rpc Init success !
-2021/04/01 12:47:40.981	INFO	cbase/servicebase.go:62	服务[live_1] 初始化完成!
-2021/04/01 12:47:40.981	INFO	cbase/servicebase.go:84	服务[live_1] 启动完成!
-2021/04/01 12:47:40.981	WARN	cbase/servicebase.go:102	注册模块【SM_MonitorModule】 没有对应的配置信息
-2021/04/01 12:47:41.032	INFO	registry/registry.go:356	发现新的服务【live_1】
+2021/04/02 19:06:26.085	INFO	cluster/service.go:80	Sys log Init success !
+2021/04/02 19:06:26.103	INFO	cluster/service.go:85	Sys event Init success !
+2021/04/02 19:06:26.103	INFO	cluster/service.go:90	Sys cron Init success !
+2021/04/02 19:06:26.104	INFO	cluster/service.go:95	Sys registry Init success !
+2021/04/02 19:06:26.109	INFO	cluster/service.go:100	Sys rpc Init success !
+2021/04/02 19:06:26.109	INFO	cbase/servicebase.go:62	服务[live_1] 初始化完成!
+2021/04/02 19:06:26.109	INFO	cbase/servicebase.go:84	服务[live_1] 启动完成!
+2021/04/02 19:06:26.109	WARN	cbase/servicebase.go:102	注册模块【SM_MonitorModule】 没有对应的配置信息
+2021/04/02 19:06:26.115	INFO	live/api_comp.go:70	HTTP-API listen On :8090
+2021/04/02 19:06:26.160	INFO	registry/registry.go:356	发现新的服务【live_1】
+2021/04/02 19:06:29.284	DEBUG	live/rtmp_comp.go:48	new client, connect remote: [::1]:50565 local:[::1]:1935
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:139
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:4
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:77
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:73
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:25
+2021/04/02 19:06:29.284	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:78
+2021/04/02 19:06:29.284	DEBUG	liveconn/conn_server.go:261	handle publish req done
+2021/04/02 19:06:29.284	DEBUG	live/rtmp_comp.go:77	handleConn: IsPublisher=true
+2021/04/02 19:06:29.292	DEBUG	live/cache_comp.go:72	[KEY] new channel [rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk]: T3d4adR9tU0mVcTvWuDPJLI6HJzvjpeGQP7TyDxl6bXDwV7A
+2021/04/02 19:06:29.293	DEBUG	live/stream.go:84	HandleReader: info[{live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk rtmp://localhost:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk o7HAiiDHTf-z6Iyf false}]
+2021/04/02 19:06:29.293	DEBUG	live/rtmp_comp.go:102	new publisher: {Key:live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk URL:rtmp://localhost:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk UID:o7HAiiDHTf-z6Iyf Inter:false}
+2021/04/02 19:06:29.293	DEBUG	live/stream.go:216	TransStart: {live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk rtmp://localhost:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk o7HAiiDHTf-z6Iyf false}
+2021/04/02 19:06:29.294	DEBUG	flv/muxer.go:127	flv dvr save stream to: %!(EXTRA string=tmp/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk_1617361589.flv)
+2021/04/02 19:06:29.294	DEBUG	live/stream.go:298	StartStaticPush: current streamname=rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk， appname=live
+2021/04/02 19:06:29.294	DEBUG	live/stream.go:301	StartStaticPush: GetStaticPushList error=no static push url
+2021/04/02 19:06:29.294	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:378
+2021/04/02 19:06:29.294	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:47
+2021/04/02 19:06:29.294	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:18
+2021/04/02 19:06:29.294	DEBUG	flv/muxer.go:135	new flv dvr: {Key:live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk URL:rtmp://localhost:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk UID:XR_FR0uWRV2txxlv Inter:false}
+2021/04/02 19:06:29.294	DEBUG	live/stream.go:107	HandleWriter: info[{live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk rtmp://localhost:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk XR_FR0uWRV2txxlv false}]
+2021/04/02 19:06:29.712	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:237
+2021/04/02 19:06:29.714	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:280
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:281
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:496
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:303
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:307
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:920
+2021/04/02 19:06:29.715	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:329
+2021/04/02 19:06:29.716	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:321
+2021/04/02 19:06:29.716	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:1175
+2021/04/02 19:06:29.716	DEBUG	liveconn/chunk_stream.go:163	2 chunkStream.Length:326
+2021/04/02 19:06:29.717	DEBUG	liveconn/chunk_stream.go:148	1 chunkStream.Length:3197909
+2021/04/02 19:06:29.717	PANIC	cbase/servicebase.go:40	runtime error: slice bounds out of range [:3197909] with capacity 512000: goroutine 59 [running]:
+github.com/liwei1dao/lego/core/cbase.Recover()
+	E:/go/src/lego/core/cbase/servicebase.go:39 +0xc6
+panic(0x167aa80, 0xc0002a09d8)
+	D:/Program Files/Go/src/runtime/panic.go:971 +0x4e6
+github.com/liwei1dao/lego/utils/pool.(*Pool).Get(0xc0002a60c0, 0x30cbd5, 0x0, 0x0, 0x0)
+	E:/go/src/lego/utils/pool/pool.go:20 +0x24f
+github.com/liwei1dao/lego/lib/modules/live/liveconn.(*ChunkStream).new(0xc0002d1cf8, 0xc0002a60c0)
+	E:/go/src/lego/lib/modules/live/liveconn/chunk_stream.go:119 +0x77
+github.com/liwei1dao/lego/lib/modules/live/liveconn.(*ChunkStream).readChunk(0xc0002d1cf8, 0xc0002a8900, 0xc000000400, 0xc0002a60c0, 0x0, 0x0)
+	E:/go/src/lego/lib/modules/live/liveconn/chunk_stream.go:149 +0x445
+github.com/liwei1dao/lego/lib/modules/live/liveconn.(*Conn).Read(0xc0002ac3c0, 0xc0002924b0, 0x0, 0x0)
+	E:/go/src/lego/lib/modules/live/liveconn/conn.go:84 +0x231
+github.com/liwei1dao/lego/lib/modules/live/liveconn.(*ConnServer).Read(0xc0002b41a0, 0xc0002924b0, 0x0, 0x0)
+	E:/go/src/lego/lib/modules/live/l
