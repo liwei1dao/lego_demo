@@ -22,6 +22,8 @@ NatsAddr = "nats://127.0.0.1:4222"
 [Modules.SM_LiveModule]
 APIAddr         = ":8090"
 RtmpAddr        = ":1935"
+HttpFlvAddr     = ":7001"
+HlsAddr         = ":7002"
 RtmpNoAuth      = true
 CacheAddr       = "redis://127.0.0.1:6379/1"
 FLVArchive      = true
